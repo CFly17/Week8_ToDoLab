@@ -1,0 +1,24 @@
+﻿@model List<ToDo>
+
+<h2>The To-Do Master List</h2>
+@foreach (ToDo td in Model)
+{
+<div style="border:4px black">
+    <p>Task ID: @td.Id</p>
+    <p>Task Name: @td.Name</p>
+    <p>Description: @td.Description</p>
+    <p>Hours to Complete: @td.HoursNeeded</p>
+    @if (td.IsCompleted == true)
+    {
+        <p>Completed: Yes </p>
+    }
+    else if (td.IsCompleted == false)
+    {
+        <p>Completed: No </p>
+    }
+
+
+    <a asp-action="EditToDo" asp-controller="ToDo" asp-route-id="@td.Id">Edit Task</a>
+    <a asp-action="MarkDone" asp-controller="ToDo" asp-route-id="@td.Id">Mark Done</a>
+</div>
+}

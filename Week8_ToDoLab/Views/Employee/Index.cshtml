@@ -1,0 +1,43 @@
+﻿@model EmployeeTaskViewModel
+
+<h2>Employees</h2>
+@foreach (Employee e in Model.Employees)
+{
+    <p>@e.Name</p>
+    <a asp-action="UpdateEmployee" asp-controller="Employee" asp-route-id="@e.Id">Update</a>
+    <br />
+    <a asp-action="DeleteEmployee" asp-controller="Employee" asp-route-id="@e.Id"> Delete </a>
+    <br />
+}
+
+<p>---------------------------------------------</p>
+
+<a asp-action="AddEmployee" asp-controller="Employee">Add Employee</a>
+
+<p>---------------------------------------------</p>
+
+
+<h2>Tasks</h2>
+
+@foreach (ToDo td in Model.toDos)
+{
+    <p>@td.Name (@td.Description)</p>
+    @if (td.IsCompleted == true)
+    {
+        <p>Completed: Yes </p>
+    }
+    else if (td.IsCompleted == false)
+    {
+        <p>Completed: No </p>
+    }
+    <a asp-action="EditToDo" asp-controller="ToDo" asp-route-id="@td.Id">Edit</a>
+    <br />
+    <a asp-action="MarkDone" asp-controller="ToDo" asp-route-id="@td.Id">Mark Done</a>
+    <br />
+    <a asp-action="DeleteToDo" asp-controller="ToDo" asp-route-id="@td.Id">Delete</a>
+    <br />
+}
+<br />
+<p>---------------------------------------------</p>
+<a asp-action="CreateToDo" asp-controller="ToDo">Add Task</a>
+<p>---------------------------------------------</p>

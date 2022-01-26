@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZZE66RbLZOcdmdPbQGGW/Wbv3XAipcUg5hU1xRShZBgnm6C//yUetUR4FjH+1MlVN9ukpF04wUsVDP4ihq4xrQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CFlynn3\\source\\repos\\Week8_ToDoLab\\Week8_ToDoLab\\Week8_ToDoLab.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CFlynn3\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\CFlynn3\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512",
+    "C:\\Users\\CFlynn3\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\CFlynn3\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

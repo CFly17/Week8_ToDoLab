@@ -1,0 +1,26 @@
+﻿@model ToDo
+
+<h2>Edit Task</h2>
+
+<form asp-action="EditToDo" asp-controller="ToDo" method="post">
+
+    <label type="text">
+        Task name:
+    </label>
+    <input type="text" name="Name" />
+    <br />
+
+    <label type="text">
+        Description:
+    </label>
+    <input type="text" name="Description" />
+    <br />
+
+    <label type="text">
+        Hours required to complete:
+    </label>
+    <input type="number" name="HoursNeeded" />
+    <br />
+
+    <input type="submit" value="Submit task">
+</form>
